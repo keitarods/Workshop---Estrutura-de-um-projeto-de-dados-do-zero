@@ -1,0 +1,22 @@
+site_name: Workshop Luciano Galvão - Estruturando um projeto de dados do zero
+theme:
+  name: material # or other theme
+  palette:
+    primary: blue
+  language: en
+
+repo_name: "keitarods/Workshop01_Luciano_Galvão"
+repo_url: "https://github.com/keitarods/Workshop---Estrutura-de-um-projeto-de-dados-do-zero"
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+
