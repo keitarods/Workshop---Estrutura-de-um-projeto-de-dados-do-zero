@@ -9,3 +9,4 @@ if __name__ == '__main__':
     dataframes_ct = concat_data_frames(dataframes)
     print(type(dataframes_ct))
     load_excel(dataframes_ct, 'data/output', 'output')
+    print("Done!")
