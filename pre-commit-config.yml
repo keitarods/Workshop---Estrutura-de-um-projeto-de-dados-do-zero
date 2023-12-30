@@ -1,0 +1,35 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+    -   id: check-added-large-files
+
+
+-   repo: https://github.com/psf/black
+    rev: 22.10.0
+    hooks:
+    -   id: blue
+
+-   repo: https://github.com/pycqa/pydocstyle
+    rev: 4.0.0  # pick a git hash / tag to point to
+    hooks:
+    -   id: pydocstyle
+
+- repo: https://github.com/pycqa/isort
+    rev: 5.11.2
+    hooks:
+      - id: isort
+        name: isort
+
+- repo: local
+  hooks:
+  -   id: pip-audit
+      name: pip-audit
+      entry: pip-audit
+      args: []
+      language: system
+      pass-filenames: false
+      types: [python] #Opcional    
