@@ -1,4 +1,4 @@
-ame: CI Workflow
+name: CI Workflow
 
 on: [pull_request]
 
